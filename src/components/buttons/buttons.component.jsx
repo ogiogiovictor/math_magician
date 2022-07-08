@@ -5,7 +5,7 @@ import './button.style.css';
 
 const Button = ({text, type, act }) => {
     
-    const performAction = (btnTextOperand) => act(btnTextOperand);
+    const performAction = (opr) => act(opr);
 
     return (
     <button onClick={() => performAction(text)}  onKeyUp={() => performAction(text)} className={`btn btn-${type}`} type="button">{text}</button>
@@ -14,7 +14,8 @@ const Button = ({text, type, act }) => {
 
 Button.PropTypes = {
     text: PropTypes.string.isRequired,
-    type: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+    // type: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+    type: PropTypes.string.isRequired,
     act: PropTypes.func.isRequired,
 }
 

@@ -15,24 +15,24 @@ class Calculator extends React.Component {
         this.state = {
             total: null,
             next: null,
-            operation: null,
+            
         };
 
     }
 
     showContent = (content) => {
-        this.setState(() => ({ next: content }));
+        this.setState(() => ({ next: content}));
       }
 
 
-    act = (operation) => {
-        console.log(operation)
-        this.setState((state) => (calculate(state, operation)));
+    act = (opr) => {
+       // console.log(operation)
+        this.setState((state) => (calculate(state, opr)));
       }
 
     render() {
         const { next, total, operation } = this.state;
-        
+        console.log(this.state)
         const button = [
             { text: 'AC', type: 'normal' },
             { text: '+/-', type: 'normal' },
@@ -57,7 +57,7 @@ class Calculator extends React.Component {
 
         return (
             <div className='cover-area'>
-                <Screen info={next || total || '0'} opr={operation} tx={total} onChange={(e) => this.showContent(e.target.value)} />
+                <Screen info={next || operation || total  } onChange={(e) => this.showContent(e.target.value)} />
 
                 <div class='calculator-grid'>
                     {button.map(btn => (
