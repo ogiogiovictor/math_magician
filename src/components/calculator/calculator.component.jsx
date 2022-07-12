@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import Screen from '../screen/screen.component';
-import Button from '../buttons/buttons.component';
+import Button from '../buttons/buttons.';
 import calculate from '../logic/calculate';
 
 import './calculator.style.css';
@@ -43,6 +43,8 @@ const Calculator = () => {
     ];
 
         return (
+            <Fragment>
+            <div className='letsCalculate'>Lets do some calculations</div>
             <div className='cover-area'>
                 <Screen info={state.next || state.operation || state.total  } onChange={(e) => showContent(e.target.value)} />
 
@@ -52,6 +54,7 @@ const Calculator = () => {
                     ))}
                 </div>
             </div>
+            </Fragment>
         )
 
 

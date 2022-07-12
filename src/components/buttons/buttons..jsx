@@ -14,8 +14,7 @@ const Button = ({text, type, act }) => {
 
 Button.PropTypes = {
     text: PropTypes.string.isRequired,
-    // type: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-    type: PropTypes.string.isRequired,
+    type: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     act: PropTypes.func.isRequired,
 }
 
