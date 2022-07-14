@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import Screen from '../screen/screen.component';
-import Button from '../buttons/buttons.';
+import Button from '../buttons/buttons';
 import calculate from '../logic/calculate';
 
 import './calculator.style.css';
