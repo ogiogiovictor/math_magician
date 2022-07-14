@@ -9,7 +9,7 @@ describe('calculate(obj, number)', () => {
     })
 
     it('test operatios', () => {
-        expect(calculate({ total: null, next: '34', operation: null }, '-')).toEqual({ total: '34', next: null, operation: '+' });
+        expect(calculate({ total: null, next: '34', operation: null }, '+')).toEqual({ total: '34', next: null, operation: '+' });
         expect(calculate({ total: '9', next: '9', operation: '+' }, '-')).toEqual({ total: '18', next: null, operation: '-' });
       });
 });
