@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './pages/header/header';
 import Home from './pages/homepage/home';
 import Quote from './pages/quote/quote';
-import Calculator from './components/calculator/calculator.component';
+import Calculator from './components/calculator/calculate';
 import './App.css';
 
 class App extends React.Component {

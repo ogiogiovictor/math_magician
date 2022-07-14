@@ -17,7 +17,8 @@
 
 ## Live Demo
 
-cooming soom
+## Heroku Live Link
+(Heroku Link) [https://math-magician-react-app.herokuapp.com/]
 
 
 ## Getting Started
