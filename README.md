@@ -18,8 +18,8 @@
 ## Live Demo
 
 ## Heroku Live Link
-(Heroku Link) [https://math-magician-react-app.herokuapp.com/]
-(Netlify) [https://idyllic-custard-a1e3e2.netlify.app/]
+- (Heroku Link) [https://math-magician-react-app.herokuapp.com/]
+- (Netlify) [https://idyllic-custard-a1e3e2.netlify.app/]
 
 
 ## Getting Started
